@@ -2,7 +2,7 @@
   "name": "nuxt-og-image",
   "type": "module",
   "version": "3.0.0-rc.53",
-  "packageManager": "pnpm@9.0.6",
+  "packageManager": "pnpm@9.1.4",
   "description": "Enlightened OG Image generation for Nuxt.",
   "author": {
     "website": "https://harlanzw.com",
@@ -37,7 +37,8 @@
     "build": "pnpm stub && nuxt-module-build build && pnpm run build:client",
     "build:client": "nuxi generate client",
     "build:module": "nuxt-build-module build",
-    "lint": "eslint . --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "dev": "nuxi dev .playground",
     "dev:build": "nuxi build .playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare .playground && nuxi prepare client",
@@ -85,7 +86,6 @@
     "yoga-wasm-web": "^0.3.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.16.1",
     "@headlessui/vue": "^1.7.21",
     "@iconify-json/carbon": "^1.1.32",
     "@iconify-json/logos": "^1.1.42",
@@ -96,6 +96,7 @@
     "@nuxt/content": "^2.12.1",
     "@nuxt/devtools": "1.2.0",
     "@nuxt/devtools-ui-kit": "^1.2.0",
+    "@nuxt/eslint-config": "^0.3.13",
     "@nuxt/module-builder": "^0.6.0",
     "@nuxt/test-utils": "3.12.1",
     "@nuxt/ui": "^2.15.2",
@@ -109,7 +110,7 @@
     "@unocss/runtime": "0.59.4",
     "@vueuse/nuxt": "^10.9.0",
     "bumpp": "^9.4.1",
-    "eslint": "9.1.1",
+    "eslint": "9.4.0",
     "jest-image-snapshot": "^6.4.0",
     "nuxt": "^3.11.2",
     "nuxt-icon": "0.6.10",
